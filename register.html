@@ -213,20 +213,30 @@
 </div>
 <form class="flex flex-col gap-5">
 <div>
-<label class="font-label-md text-label-md text-on-surface block mb-2" for="fullName">Full Name</label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="fullName" name="fullName" placeholder="Jane Doe" type="text"/>
+<label class="font-label-md text-label-md text-on-surface block mb-2" for="fullName">Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="fullName" name="fullName" placeholder="Jane Doe" type="text" required/>
 </div>
 <div>
-<label class="font-label-md text-label-md text-on-surface block mb-2" for="email">Institutional Email</label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="email" name="email" placeholder="jane.doe@university.edu" type="email"/>
+<label class="font-label-md text-label-md text-on-surface block mb-2" for="email">Email</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="email" name="email" placeholder="jane.doe@example.com" type="email" required/>
 </div>
 <div>
 <label class="font-label-md text-label-md text-on-surface block mb-2" for="phone">Phone Number</label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="phone" name="phone" placeholder="+1 (555) 000-0000" type="tel"/>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="phone" name="phone" placeholder="+91 00000 00000" type="tel" required/>
 </div>
 <div>
-<label class="font-label-md text-label-md text-on-surface block mb-2" for="organization">Organization / Institution</label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="organization" name="organization" placeholder="e.g. State University" type="text"/>
+<label class="font-label-md text-label-md text-on-surface block mb-2" for="gender">Gender</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all text-on-surface" id="gender" name="gender" required>
+    <option value="" disabled selected>Select your gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+    <option value="Prefer not to say">Prefer not to say</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface block mb-2" for="occupation">Occupation</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="occupation" name="occupation" placeholder="e.g. Student, Engineer, Teacher" type="text" required/>
 </div>
 <button class="w-full mt-4 bg-secondary-container text-on-primary font-label-md text-label-md uppercase tracking-wide py-4 rounded-lg hover:bg-secondary transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-secondary-container" type="submit">
                             Complete Registration
