@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>IHRC Maharashtra - Home</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>IHRC Maharashtra - Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -101,149 +107,195 @@
             }
         }
     </script>
-<style>
+    <style>
         .marquee-container {
             overflow: hidden;
             white-space: nowrap;
             width: 100%;
         }
+
         .marquee-content {
             display: inline-block;
             /* Animation handled by CSS in a real app, here we simulate structure */
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
-<!-- TopNavBar -->
-<header class="bg-white dark:bg-slate-950 docked full-width top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none transition-all duration-200">
-<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
-<!-- Brand -->
-<a class="text-xl font-bold tracking-tighter text-[#001F3F] dark:text-white" href="index.html">IHRC Maharashtra</a>
-<!-- Navigation -->
-<nav class="hidden md:flex gap-8">
-<a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#FF851B] border-b-2 border-[#FF851B] pb-1 hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity" href="workshops.html">Workshops</a>
-<a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity" href="impact.html">Impact</a>
-<a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity" href="about.html">About</a>
-</nav>
-<!-- Actions -->
-<div class="flex items-center gap-4 hidden md:flex">
-<button class="font-label-md text-primary-container border border-primary-container rounded px-4 py-2 hover:bg-surface-container transition-colors">File a Complaint</button>
-<a href="register.html" class="font-label-md bg-secondary-container text-on-primary rounded px-6 py-2 hover:opacity-90 transition-opacity inline-block">Enroll Now</a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary-container p-2">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</header>
-<!-- Main Canvas -->
-<main class="w-full">
-<!-- Hero Section -->
-<section class="bg-[#F8F9FA] pt-32 pb-40 px-gutter min-h-[80vh] flex items-center justify-center border-b border-surface-variant">
-    <div class="max-w-5xl mx-auto flex flex-col items-start w-full">
-        <p class="font-['Inter'] text-xs font-bold tracking-[0.15em] text-[#80848d] uppercase mb-8">
-            International Human Rights Council - Maharashtra Board
-        </p>
-        <h1 class="font-['Inter'] text-6xl md:text-[80px] font-extrabold leading-[1.05] text-[#2A313C] tracking-tight mb-10">
-            Workshops that<br/>
-            <span class="text-[#F15A29] italic">build people,</span><br/>
-            fund public <span class="relative inline-block border-b-[5px] border-[#F15A29] pb-1">welfare.</span>
-        </h1>
-        <p class="font-['Inter'] text-lg md:text-xl text-[#5F6368] leading-[1.6] max-w-4xl mb-12">
-            Education, Fitness, Parenting, Nutrition, Astrology, Mental Health, AI &amp; ChatGPT, Competitive Exams — eight practical workshops, beginner friendly, under the Education Department.
-        </p>
-        <div class="flex flex-wrap gap-4">
-            <a href="workshops.html" class="bg-[#2B4B77] hover:bg-[#1E3658] text-white font-['Inter'] font-bold text-sm tracking-[0.05em] px-8 py-4 flex items-center gap-2 transition-colors">
-                BROWSE WORKSHOPS 
-                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-            </a>
-            <a href="about.html" class="bg-transparent border border-[#cfd4da] hover:bg-white text-[#5F6368] font-['Inter'] font-bold text-sm tracking-[0.05em] px-8 py-4 transition-colors">
-                OUR MISSION
-            </a>
+
+<body
+    class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
+    <!-- TopNavBar -->
+    <header
+        class="bg-white dark:bg-slate-950 docked full-width top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none transition-all duration-200">
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+            <!-- Brand -->
+            <a class="text-xl font-bold tracking-tighter text-[#001F3F] dark:text-white" href="index.html">IHRC
+                Maharashtra</a>
+            <!-- Navigation -->
+            <nav class="hidden md:flex gap-8">
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#FF851B] border-b-2 border-[#FF851B] pb-1 hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity"
+                    href="workshops.html">Workshops</a>
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity"
+                    href="impact.html">Impact</a>
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity"
+                    href="about.html">About</a>
+            </nav>
+            <!-- Actions -->
+            <div class="flex items-center gap-4 hidden md:flex">
+                <button
+                    class="font-label-md text-primary-container border border-primary-container rounded px-4 py-2 hover:bg-surface-container transition-colors">File
+                    a Complaint</button>
+                <a href="register.html"
+                    class="font-label-md bg-secondary-container text-on-primary rounded px-6 py-2 hover:opacity-90 transition-opacity inline-block">Enroll
+                    Now</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-primary-container p-2">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
         </div>
-    </div>
-</section>
-<!-- Institutional Impact Section -->
-<section class="bg-surface-container-lowest border-y border-surface-variant py-stack-lg">
-<div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-stack-md">
-<h2 class="font-h2 text-primary-fixed-variant mb-unit">Institutional Impact</h2>
-<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Measuring our footprint across communities through dedicated programs and transparent resource allocation.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Stat 1 -->
-<div class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
-<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
-<span class="material-symbols-outlined">category</span>
-</div>
-<div class="font-h1 text-secondary-container mb-2">8</div>
-<div class="font-label-md text-on-surface-variant uppercase tracking-wider">Core Domains</div>
-</div>
-<!-- Stat 2 -->
-<div class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
-<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
-<span class="material-symbols-outlined">health_and_safety</span>
-</div>
-<div class="font-h1 text-secondary-container mb-2">100%</div>
-<div class="font-label-md text-on-surface-variant uppercase tracking-wider">Welfare Allocation</div>
-</div>
-<!-- Stat 3 -->
-<div class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
-<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
-<span class="material-symbols-outlined">live_tv</span>
-</div>
-<div class="font-h1 text-secondary-container mb-2">50+</div>
-<div class="font-label-md text-on-surface-variant uppercase tracking-wider">Live Sessions</div>
-</div>
-<!-- Stat 4 -->
-<div class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
-<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
-<span class="material-symbols-outlined">groups</span>
-</div>
-<div class="font-h1 text-secondary-container mb-2">10k+</div>
-<div class="font-label-md text-on-surface-variant uppercase tracking-wider">Lives Impacted</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Partners & Accreditations Marquee -->
-<section class="py-stack-md bg-surface border-b border-surface-variant overflow-hidden">
-<div class="max-w-container-max mx-auto px-gutter mb-6 text-center">
-<h3 class="font-label-md text-outline uppercase tracking-widest">Partners &amp; Accreditations</h3>
-</div>
-<div class="marquee-container opacity-60 hover:opacity-100 transition-opacity">
-<!-- Simulating a continuous marquee effect -->
-<div class="marquee-content flex gap-12 px-8 items-center justify-center min-w-full">
-<div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span class="material-symbols-outlined text-[28px]">account_balance</span> Gov Dept. of Ed</div>
-<div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span class="material-symbols-outlined text-[28px]">public</span> Global HR Init.</div>
-<div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span class="material-symbols-outlined text-[28px]">policy</span> National Standards</div>
-<div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span class="material-symbols-outlined text-[28px]">verified</span> Quality Council</div>
-<div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span class="material-symbols-outlined text-[28px]">gavel</span> Legal Aid Soc.</div>
-</div>
-</div>
-</section>
-<!-- Spacer for visual breathability -->
-<div class="h-stack-lg"></div>
-</main>
-<!-- Footer -->
-<footer class="bg-[#001F3F] dark:bg-black w-full border-t border-slate-800 flat no shadows">
-<div class="max-w-[1280px] mx-auto py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 divide-y md:divide-y-0 divide-slate-800">
-<div class="md:col-span-1 pt-8 md:pt-0">
-<span class="text-lg font-bold text-white mb-4 block">IHRC Maharashtra</span>
-<p class="font-['Inter'] text-sm leading-relaxed text-slate-300">
+    </header>
+    <!-- Main Canvas -->
+    <main class="w-full">
+        <!-- Hero Section -->
+        <section
+            class="bg-[#F8F9FA] pt-32 pb-40 px-gutter min-h-[80vh] flex items-center justify-center border-b border-surface-variant">
+            <div class="max-w-5xl mx-auto flex flex-col items-start w-full">
+                <p class="font-['Inter'] text-xs font-bold tracking-[0.15em] text-[#80848d] uppercase mb-8">
+                    International Human Rights Council - Maharashtra Board
+                </p>
+                <h1
+                    class="font-['Inter'] text-6xl md:text-[80px] font-extrabold leading-[1.05] text-[#2A313C] tracking-tight mb-10">
+                    Workshops that<br />
+                    <span class="text-[#F15A29] italic">develops your skills,</span><br />
+                    & create Social Impact<span
+                        class="relative inline-block border-b-[5px] border-[#F15A29] pb-1">welfare.</span>
+                </h1>
+                <p class="font-['Inter'] text-lg md:text-xl text-[#5F6368] leading-[1.6] max-w-4xl mb-12">
+                    The International Human Rights Council, Maharashtra Board (Education Department) is conducting a
+                    series of workshops focused on skill development and personal growth.<br>
+                    These workshops are designed to provide practical knowledge in multiple domains that are relevant in
+                    today’s world.<br>
+                    This initiative also supports public welfare activities, making your participation meaningful beyond
+                    just learning.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="workshops.html"
+                        class="bg-[#2B4B77] hover:bg-[#1E3658] text-white font-['Inter'] font-bold text-sm tracking-[0.05em] px-8 py-4 flex items-center gap-2 transition-colors">
+                        BROWSE WORKSHOPS
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                    <a href="about.html"
+                        class="bg-transparent border border-[#cfd4da] hover:bg-white text-[#5F6368] font-['Inter'] font-bold text-sm tracking-[0.05em] px-8 py-4 transition-colors">
+                        OUR MISSION
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Institutional Impact Section -->
+        <section class="bg-surface-container-lowest border-y border-surface-variant py-stack-lg">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="text-center mb-stack-md">
+                    <h2 class="font-h2 text-primary-fixed-variant mb-unit">Institutional Impact</h2>
+                    <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Measuring our footprint across
+                        communities through dedicated programs and transparent resource allocation.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                    <!-- Stat 1 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">category</span>
+                        </div>
+                        <div class="font-h1 text-secondary-container mb-2">8</div>
+                        <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Core Domains</div>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">health_and_safety</span>
+                        </div>
+                        <div class="font-h1 text-secondary-container mb-2">100%</div>
+                        <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Welfare Allocation
+                        </div>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">live_tv</span>
+                        </div>
+                        <div class="font-h1 text-secondary-container mb-2">50+</div>
+                        <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Live Sessions</div>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div
+                        class="bg-white p-6 rounded-lg border border-surface-variant shadow-[0_4px_12px_rgba(0,0,0,0.03)] text-center flex flex-col items-center">
+                        <div
+                            class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center mb-4">
+                            <span class="material-symbols-outlined">groups</span>
+                        </div>
+                        <div class="font-h1 text-secondary-container mb-2">10k+</div>
+                        <div class="font-label-md text-on-surface-variant uppercase tracking-wider">Lives Impacted</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners & Accreditations Marquee -->
+        <section class="py-stack-md bg-surface border-b border-surface-variant overflow-hidden">
+            <div class="max-w-container-max mx-auto px-gutter mb-6 text-center">
+                <h3 class="font-label-md text-outline uppercase tracking-widest">Partners &amp; Accreditations</h3>
+            </div>
+            <div class="marquee-container opacity-60 hover:opacity-100 transition-opacity">
+                <!-- Simulating a continuous marquee effect -->
+                <div class="marquee-content flex gap-12 px-8 items-center justify-center min-w-full">
+                    <div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span
+                            class="material-symbols-outlined text-[28px]">account_balance</span> Gov Dept. of Ed</div>
+                    <div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span
+                            class="material-symbols-outlined text-[28px]">public</span> Global HR Init.</div>
+                    <div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span
+                            class="material-symbols-outlined text-[28px]">policy</span> National Standards</div>
+                    <div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span
+                            class="material-symbols-outlined text-[28px]">verified</span> Quality Council</div>
+                    <div class="font-h3 text-on-surface-variant flex items-center gap-2 grayscale"><span
+                            class="material-symbols-outlined text-[28px]">gavel</span> Legal Aid Soc.</div>
+                </div>
+            </div>
+        </section>
+        <!-- Spacer for visual breathability -->
+        <div class="h-stack-lg"></div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#001F3F] dark:bg-black w-full border-t border-slate-800 flat no shadows">
+        <div
+            class="max-w-[1280px] mx-auto py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 divide-y md:divide-y-0 divide-slate-800">
+            <div class="md:col-span-1 pt-8 md:pt-0">
+                <span class="text-lg font-bold text-white mb-4 block">IHRC Maharashtra</span>
+                <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">
                     Advancing human rights education and institutional excellence across communities.
                 </p>
-</div>
-<div class="md:col-span-3 pt-8 md:pt-0 flex flex-wrap gap-x-12 gap-y-4 justify-start md:justify-end">
-<a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]" href="#">Legal</a>
-<a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]" href="#">Board Info</a>
-<a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]" href="#">Contact Details</a>
-<a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]" href="#">Privacy Policy</a>
-<a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]" href="#">Terms of Service</a>
-</div>
-<div class="col-span-1 md:col-span-4 pt-8 border-t border-slate-800 mt-8 text-center md:text-left">
-<p class="font-['Inter'] text-sm leading-relaxed text-slate-400">© 2024 International Human Rights Council Maharashtra. All Rights Reserved.</p>
-</div>
-</div>
-</footer>
-</body></html>
+            </div>
+            <div class="md:col-span-3 pt-8 md:pt-0 flex flex-wrap gap-x-12 gap-y-4 justify-start md:justify-end">
+                <a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]"
+                    href="#">Legal</a>
+                <a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]"
+                    href="#">Board Info</a>
+                <a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]"
+                    href="#">Contact Details</a>
+                <a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]"
+                    href="#">Privacy Policy</a>
+                <a class="font-['Inter'] text-sm leading-relaxed text-slate-300 hover:text-white hover:underline transition-all focus:ring-2 focus:ring-[#FF851B]"
+                    href="#">Terms of Service</a>
+            </div>
+            <div class="col-span-1 md:col-span-4 pt-8 border-t border-slate-800 mt-8 text-center md:text-left">
+                <p class="font-['Inter'] text-sm leading-relaxed text-slate-400">© 2024 International Human Rights
+                    Council Maharashtra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
