@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>IHRC Maharashtra - Home</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>IHRC Maharashtra - Home</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -101,190 +107,267 @@
             }
         }
     </script>
-<style>
+    <style>
         .marquee-container {
             overflow: hidden;
             white-space: nowrap;
             width: 100%;
         }
+
         .marquee-content {
             display: inline-block;
             /* Animation handled by CSS in a real app, here we simulate structure */
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
-<!-- TopNavBar -->
-<header class="bg-white dark:bg-slate-950 docked full-width top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none transition-all duration-200">
-<div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
-<!-- Brand -->
-<a class="flex items-center gap-2 text-xl font-bold tracking-tighter text-[#001F3F] dark:text-white" href="index.html">
-<img src="logo.png" alt="IHRC Logo" class="h-10 w-auto" />
-IHRC Maharashtra
-</a>
-<!-- Navigation -->
-<nav class="hidden md:flex gap-8">
-<a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#FF851B] border-b-2 border-[#FF851B] pb-1 hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity" href="workshops.html">Workshops</a>
-<a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity" href="impact.html">Impact</a>
-<a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity" href="about.html">About</a>
-</nav>
-<!-- Actions -->
-<div class="flex items-center gap-4 hidden md:flex">
-<button class="font-label-md text-primary-container border border-primary-container rounded px-4 py-2 hover:bg-surface-container transition-colors">Contact Us</button>
-<a href="register.html" class="font-label-md bg-secondary-container text-on-primary rounded px-6 py-2 hover:opacity-90 transition-opacity inline-block">Enroll Now</a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary-container p-2">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</header>
-<!-- Main Canvas -->
-<main class="w-full">
-    <!-- Hero -->
-    <section class="max-w-container-max mx-auto px-gutter py-stack-lg text-center md:text-left">
-        <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Education Department</span>
-        <h1 class="font-h1 text-h1 text-primary-container mt-unit mb-stack-md">International Human Rights Council,<br/>Maharashtra Board.</h1>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">A non-government organization committed to the protection and promotion of human rights through education, skill development, and direct public welfare action across the state of Maharashtra.</p>
-    </section>
 
-    <!-- Mission & Vision -->
-    <section class="bg-surface-container-low py-stack-lg border-y border-outline-variant">
-        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-md">
-            <!-- Mission -->
-            <div class="bg-primary-container p-6 rounded-lg text-white flex flex-col gap-stack-sm shadow-[0_4px_20px_rgba(0,31,63,0.05)]">
-                <span class="material-symbols-outlined text-4xl text-secondary-container" style="font-variation-settings: 'FILL' 1;">flag</span>
-                <h2 class="font-h2 text-h2 text-white">Our Mission</h2>
-                <p class="font-body-lg text-body-lg text-primary-fixed">To empower every individual in Maharashtra with practical skills and knowledge while channeling resources back into communities that need it most. We believe education and social justice are two sides of the same coin.</p>
-            </div>
-            <!-- Vision -->
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm shadow-[0_4px_20px_rgba(0,31,63,0.05)]">
-                <span class="material-symbols-outlined text-4xl text-primary-container" style="font-variation-settings: 'FILL' 1;">visibility</span>
-                <h2 class="font-h2 text-h2 text-primary-container">Our Vision</h2>
-                <p class="font-body-lg text-body-lg text-on-surface-variant">A Maharashtra where every citizen has access to quality education, mental wellness, and economic opportunity — regardless of background, and where learning directly powers community welfare.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Section -->
-    <section class="max-w-container-max mx-auto px-gutter py-stack-lg">
-        <div class="text-center mb-stack-md">
-            <span class="font-label-md text-label-md text-secondary tracking-widest uppercase">Our Team</span>
-            <h2 class="font-h2 text-h2 text-primary-container mt-2">Leadership</h2>
-            <p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl mx-auto">Meet the dedicated leaders driving IHRC Maharashtra (Education Department)'s mission of human rights and community welfare.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-            <!-- Leader 1: Mr. Tejas Pawar -->
-            <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,31,63,0.06)] hover:shadow-[0_8px_32px_rgba(0,31,63,0.10)] transition-shadow duration-300">
-                <div class="w-28 h-28 rounded-full overflow-hidden mb-5 border-4 border-primary-fixed shadow-md">
-                    <img src="tejas_pawar.jpeg" alt="Mr. Tejas Pawar" class="w-full h-full object-cover object-top" />
-                </div>
-                <h3 class="font-h3 text-h3 text-primary-container mb-1">Mr. Tejas Pawar</h3>
-                <p class="font-label-md text-label-md text-secondary-container uppercase tracking-wider mb-4">President</p>
-                <div class="w-10 h-0.5 bg-secondary-container rounded mb-4"></div>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Mr. Tejas Pawar brings over 16 years of experience in social welfare and community development. He has previously served as Director of Community Service at Rotary, contributing to various impactful initiatives.</p>
-            </div>
-            <!-- Leader 2: Mr. Uday Dubey -->
-            <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,31,63,0.06)] hover:shadow-[0_8px_32px_rgba(0,31,63,0.10)] transition-shadow duration-300">
-                <div class="w-28 h-28 rounded-full overflow-hidden mb-5 border-4 border-primary-fixed shadow-md">
-                    <img src="uday_dubey.jpeg" alt="Mr. Uday Dubey" class="w-full h-full object-cover object-top" />
-                </div>
-                <h3 class="font-h3 text-h3 text-primary-container mb-1">Mr. Uday Dubey</h3>
-                <p class="font-label-md text-label-md text-secondary-container uppercase tracking-wider mb-4">Executive President</p>
-                <div class="w-10 h-0.5 bg-secondary-container rounded mb-4"></div>
-                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Mr. Uday Dubey comes from a strong corporate background in the real estate sector. He is also the founder of a rapidly growing D2C brand and brings valuable expertise in team building, leadership, and operational management.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- What We Cover -->
-    <section class="max-w-container-max mx-auto px-gutter py-stack-lg">
-        <h2 class="font-h2 text-h2 text-primary-container mb-stack-md text-center">What We Cover</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-            
-
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
-                <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
-                <h3 class="font-h3 text-h3 text-primary-container">Fitness</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Sustainable exercise routines, body awareness, physical wellness.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
-                <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">family_restroom</span>
-                <h3 class="font-h3 text-h3 text-primary-container">Parenting</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Conscious parenting, child development, family communication.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
-                <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">nutrition</span>
-                <h3 class="font-h3 text-h3 text-primary-container">Nutrition</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Balanced Indian diet plans, food science, healthy living.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
-                <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
-                <h3 class="font-h3 text-h3 text-primary-container">Astrology</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Vedic astrology, birth chart reading, planetary guidance.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
-                <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">psychology</span>
-                <h3 class="font-h3 text-h3 text-primary-container">Mental Health</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Anxiety management, stress relief, cognitive wellness techniques.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
-                <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
-                <h3 class="font-h3 text-h3 text-primary-container">AI &amp; ChatGPT</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Prompt engineering, AI tools, automating workflows with ChatGPT.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
-                <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
-                <h3 class="font-h3 text-h3 text-primary-container">Competitive Exams</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">UPSC, MPSC, Bank PO, SSC strategies, mock tests, mentoring.</p>
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="bg-primary-container text-white py-stack-lg px-gutter mt-stack-md text-center border-t border-outline-variant">
-        <div class="max-w-2xl mx-auto flex flex-col items-center gap-gutter">
-            <h2 class="font-h2 text-h2 text-white">Ready to Start?</h2>
-            <p class="font-body-lg text-body-lg text-primary-fixed">Browse our workshops and join learners across Maharashtra who are growing their skills while contributing to society.</p>
-            <a href="workshops.html" class="bg-[#FF8C00] text-white font-button text-button px-8 py-4 rounded hover:bg-orange-600 transition-colors mt-unit inline-block">
-                Browse Workshops
+<body
+    class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
+    <!-- TopNavBar -->
+    <header
+        class="bg-white dark:bg-slate-950 docked full-width top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none transition-all duration-200">
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+            <!-- Brand -->
+            <a class="flex items-center gap-2 text-xl font-bold tracking-tighter text-[#001F3F] dark:text-white"
+                href="index.html">
+                <img src="logo.png" alt="IHRC Logo" class="h-10 w-auto" />
+                IHRC Maharashtra
             </a>
+            <!-- Navigation -->
+            <nav class="hidden md:flex gap-8">
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#FF851B] border-b-2 border-[#FF851B] pb-1 hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity"
+                    href="workshops.html">Workshops</a>
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity"
+                    href="impact.html">Impact</a>
+                <a class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 active:opacity-80 transition-opacity"
+                    href="about.html">About</a>
+            </nav>
+            <!-- Actions -->
+            <div class="flex items-center gap-4 hidden md:flex">
+                <button
+                    class="font-label-md text-primary-container border border-primary-container rounded px-4 py-2 hover:bg-surface-container transition-colors">Contact
+                    Us</button>
+                <a href="register.html"
+                    class="font-label-md bg-secondary-container text-on-primary rounded px-6 py-2 hover:opacity-90 transition-opacity inline-block">Enroll
+                    Now</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-primary-container p-2">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
         </div>
-    </section>
-</main>
-<!-- Footer -->
-<footer class="bg-[#001F3F] dark:bg-black w-full border-t border-slate-800 flat no shadows">
-<div class="max-w-[1280px] mx-auto py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 divide-y md:divide-y-0 divide-slate-800">
-<div class="md:col-span-1 pt-8 md:pt-0">
-<span class="text-lg font-bold text-white mb-4 block">IHRC Maharashtra (Education Department)</span>
-<p class="font-['Inter'] text-sm leading-relaxed text-slate-300">
+    </header>
+    <!-- Main Canvas -->
+    <main class="w-full">
+        <!-- Hero -->
+        <section class="max-w-container-max mx-auto px-gutter py-stack-lg text-center md:text-left">
+            <span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Education
+                Department</span>
+            <h1 class="font-h1 text-h1 text-primary-container mt-unit mb-stack-md">International Human Rights
+                Council,<br />Maharashtra Board.</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">A non-government organization
+                committed to the protection and promotion of human rights through education, skill development, and
+                direct public welfare action across the state of Maharashtra.</p>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="bg-surface-container-low py-stack-lg border-y border-outline-variant">
+            <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                <!-- Mission -->
+                <div
+                    class="bg-primary-container p-6 rounded-lg text-white flex flex-col gap-stack-sm shadow-[0_4px_20px_rgba(0,31,63,0.05)]">
+                    <span class="material-symbols-outlined text-4xl text-secondary-container"
+                        style="font-variation-settings: 'FILL' 1;">flag</span>
+                    <h2 class="font-h2 text-h2 text-white">Our Mission</h2>
+                    <p class="font-body-lg text-body-lg text-primary-fixed">To empower every individual in Maharashtra
+                        with practical skills and knowledge while channeling resources back into communities that need
+                        it most. We believe education and social justice are two sides of the same coin.</p>
+                </div>
+                <!-- Vision -->
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm shadow-[0_4px_20px_rgba(0,31,63,0.05)]">
+                    <span class="material-symbols-outlined text-4xl text-primary-container"
+                        style="font-variation-settings: 'FILL' 1;">visibility</span>
+                    <h2 class="font-h2 text-h2 text-primary-container">Our Vision</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant">A Maharashtra where every citizen has
+                        access to quality education, mental wellness, and economic opportunity — regardless of
+                        background, and where learning directly powers community welfare.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="max-w-container-max mx-auto px-gutter py-stack-lg">
+            <div class="text-center mb-stack-md">
+                <span class="font-label-md text-label-md text-secondary tracking-widest uppercase">Our Team</span>
+                <h2 class="font-h2 text-h2 text-primary-container mt-2">Leadership</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl mx-auto">Meet the dedicated
+                    leaders driving IHRC Maharashtra (Education Department)'s mission of human rights and community
+                    welfare.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <!-- Leader 1: Mr. Tejas Pawar -->
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,31,63,0.06)] hover:shadow-[0_8px_32px_rgba(0,31,63,0.10)] transition-shadow duration-300">
+                    <div class="w-28 h-28 rounded-full overflow-hidden mb-5 border-4 border-primary-fixed shadow-md">
+                        <img src="tejas_pawar.jpeg" alt="Mr. Tejas Pawar" class="w-full h-full object-cover object-top" />
+                    </div>
+                    <h3 class="font-h3 text-h3 text-primary-container mb-1">Mr. Tejas Pawar</h3>
+                    <p class="font-label-md text-label-md text-secondary-container uppercase tracking-wider mb-4">
+                        President</p>
+                    <div class="w-10 h-0.5 bg-secondary-container rounded mb-4"></div>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Mr. Tejas Pawar brings
+                        over 16 years of experience in social welfare and community development. He has previously
+                        served as Director of Community Service at Rotary, contributing to various impactful
+                        initiatives.</p>
+                </div>
+                <!-- Leader 2: Mr. Uday Dubey -->
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 flex flex-col items-center text-center shadow-[0_4px_20px_rgba(0,31,63,0.06)] hover:shadow-[0_8px_32px_rgba(0,31,63,0.10)] transition-shadow duration-300">
+                    <div class="w-28 h-28 rounded-full overflow-hidden mb-5 border-4 border-primary-fixed shadow-md">
+                        <img src="uday_dubey.jpeg" alt="Mr. Uday Dubey" class="w-full h-full object-cover object-top" />
+                    </div>
+                    <h3 class="font-h3 text-h3 text-primary-container mb-1">Mr. Uday Dubey</h3>
+                    <p class="font-label-md text-label-md text-secondary-container uppercase tracking-wider mb-4">
+                        Executive President</p>
+                    <div class="w-10 h-0.5 bg-secondary-container rounded mb-4"></div>
+                    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Mr. Uday Dubey comes
+                        from a strong corporate background in the real estate sector. He is also the founder of a
+                        rapidly growing D2C brand and brings valuable expertise in team building, leadership, and
+                        operational management.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Cover -->
+        <section class="max-w-container-max mx-auto px-gutter py-stack-lg">
+            <h2 class="font-h2 text-h2 text-primary-container mb-stack-md text-center">What We Cover</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+
+
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
+                    <span class="material-symbols-outlined text-3xl text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+                    <h3 class="font-h3 text-h3 text-primary-container">Fitness</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Sustainable exercise routines, body
+                        awareness, physical wellness.</p>
+                </div>
+
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
+                    <span class="material-symbols-outlined text-3xl text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">family_restroom</span>
+                    <h3 class="font-h3 text-h3 text-primary-container">Parenting</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Conscious parenting, child development,
+                        family communication.</p>
+                </div>
+
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
+                    <span class="material-symbols-outlined text-3xl text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">nutrition</span>
+                    <h3 class="font-h3 text-h3 text-primary-container">Nutrition</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Balanced Indian diet plans, food
+                        science, healthy living.</p>
+                </div>
+
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
+                    <span class="material-symbols-outlined text-3xl text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                    <h3 class="font-h3 text-h3 text-primary-container">Astrology</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Vedic astrology, birth chart reading,
+                        planetary guidance.</p>
+                </div>
+
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
+                    <span class="material-symbols-outlined text-3xl text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">psychology</span>
+                    <h3 class="font-h3 text-h3 text-primary-container">Mental Health</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Anxiety management, stress relief,
+                        cognitive wellness techniques.</p>
+                </div>
+
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
+                    <span class="material-symbols-outlined text-3xl text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+                    <h3 class="font-h3 text-h3 text-primary-container">AI &amp; ChatGPT</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Prompt engineering, AI tools,
+                        automating workflows with ChatGPT.</p>
+                </div>
+
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant p-6 rounded-lg flex flex-col gap-stack-sm hover:shadow-[0px_4px_20px_rgba(0,31,63,0.05)] transition-shadow duration-300">
+                    <span class="material-symbols-outlined text-3xl text-secondary"
+                        style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+                    <h3 class="font-h3 text-h3 text-primary-container">Competitive Exams</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">UPSC, MPSC, Bank PO, SSC strategies,
+                        mock tests, mentoring.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section
+            class="bg-primary-container text-white py-stack-lg px-gutter mt-stack-md text-center border-t border-outline-variant">
+            <div class="max-w-2xl mx-auto flex flex-col items-center gap-gutter">
+                <h2 class="font-h2 text-h2 text-white">Ready to Start?</h2>
+                <p class="font-body-lg text-body-lg text-primary-fixed">Browse our workshops and join learners across
+                    Maharashtra who are growing their skills while contributing to society.</p>
+                <a href="workshops.html"
+                    class="bg-[#FF8C00] text-white font-button text-button px-8 py-4 rounded hover:bg-orange-600 transition-colors mt-unit inline-block">
+                    Browse Workshops
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#001F3F] dark:bg-black w-full border-t border-slate-800 flat no shadows">
+        <div
+            class="max-w-[1280px] mx-auto py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12 divide-y md:divide-y-0 divide-slate-800">
+            <div class="md:col-span-1 pt-8 md:pt-0">
+                <span class="text-lg font-bold text-white mb-4 block">IHRC Maharashtra (Education Department)</span>
+                <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">
                     Advancing human rights education and institutional excellence across communities.
                 </p>
-</div>
-<div class="md:col-span-3 pt-8 md:pt-0 grid grid-cols-1 sm:grid-cols-3 gap-8">
-    <div>
-        <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇺🇸 US Headquarters</h4>
-        <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">1126 Pitner Avenue, Evanston,<br>IL 60202, United States<br><a href="tel:+12242550036" class="hover:text-[#FF851B] transition-colors">+1 224 255 0036</a><br><a href="mailto:info@ihrc.in" class="hover:text-[#FF851B] transition-colors">info@ihrc.in</a></p>
-    </div>
-    <div>
-        <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇨🇭 Switzerland Headquarters</h4>
-        <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">31 Rue Vollandes, 1207 Genèva,<br>Switzerland<br><a href="tel:+41779664839" class="hover:text-[#FF851B] transition-colors">+41 77 966 4839</a><br><a href="mailto:info@ihrc-geneve.org" class="hover:text-[#FF851B] transition-colors">info@ihrc-geneve.org</a></p>
-    </div>
-    <div>
-        <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇮🇳 India Headquarters</h4>
-        <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">54 Raj Chambers, Alibhai Premji Marg,<br>Grant Road, Mumbai - 400007<br><a href="tel:+917208802565" class="hover:text-[#FF851B] transition-colors">+91 72088 02565</a><br><a href="mailto:ihrc777@gmail.com" class="hover:text-[#FF851B] transition-colors">ihrc777@gmail.com</a></p>
-    </div>
-</div>
-<div class="col-span-1 md:col-span-4 pt-8 border-t border-slate-800 mt-8 text-center md:text-left">
-<p class="font-['Inter'] text-sm leading-relaxed text-slate-400">© 2024 International Human Rights Council Maharashtra. All Rights Reserved.</p>
-</div>
-</div>
-</footer>
-</body></html>
+            </div>
+            <div class="md:col-span-3 pt-8 md:pt-0 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇺🇸 US Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">1126 Pitner Avenue, Evanston,<br>IL
+                        60202, United States<br><a href="tel:+12242550036"
+                            class="hover:text-[#FF851B] transition-colors">+1 224 255 0036</a><br><a
+                            href="mailto:info@ihrc.in" class="hover:text-[#FF851B] transition-colors">info@ihrc.in</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇨🇭 Switzerland
+                        Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">31 Rue Vollandes, 1207
+                        Genèva,<br>Switzerland<br><a href="tel:+41779664839"
+                            class="hover:text-[#FF851B] transition-colors">+41 77 966 4839</a><br><a
+                            href="mailto:info@ihrc-geneve.org"
+                            class="hover:text-[#FF851B] transition-colors">info@ihrc-geneve.org</a></p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇮🇳 India Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">54 Raj Chambers, Alibhai Premji
+                        Marg,<br>Grant Road, Mumbai - 400007<br><a href="tel:+917208802565"
+                            class="hover:text-[#FF851B] transition-colors">+91 72088 02565</a><br><a
+                            href="mailto:ihrc777@gmail.com"
+                            class="hover:text-[#FF851B] transition-colors">ihrc777@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col-span-1 md:col-span-4 pt-8 border-t border-slate-800 mt-8 text-center md:text-left">
+                <p class="font-['Inter'] text-sm leading-relaxed text-slate-400">© 2024 International Human Rights
+                    Council Maharashtra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
