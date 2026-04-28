@@ -100,21 +100,21 @@ serve(async (req) => {
             "Authorization": `Bearer ${resendApiKey}`
           },
           body: JSON.stringify({
-            from: "IHRC Workshops <onboarding@resend.dev>", // Change to your verified domain once ready
+            from: "IHRC Workshops <support@ihrcmahaedu.in>",
             to: [email],
-            subject: "Workshop Registration Confirmed - IHRC Maharashtra",
+            subject: "Workshop Registration Confirmed - IHRC Maharashtra (Education Department)",
             html: `
               <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eaeaec; border-radius: 8px;">
                 <h2 style="color: #001F3F;">Registration Confirmed!</h2>
                 <p>Dear <strong>${name}</strong>,</p>
-                <p>Thank you for registering for the <strong>AI & ChatGPT Workshop</strong>.</p>
+                <p>Thank you for registering for the <strong>AI &amp; ChatGPT Workshop</strong>.</p>
                 <p>Your payment was successful and your seat is confirmed.</p>
                 <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin: 20px 0;">
                   <p style="margin: 5px 0;"><strong>Order ID:</strong> ${order.id}</p>
                   <p style="margin: 5px 0;"><strong>Payment ID:</strong> ${payment.id}</p>
                 </div>
                 <p>We look forward to seeing you!</p>
-                <p>Regards,<br>IHRC Maharashtra Board</p>
+                <p>Regards,<br>IHRC Maharashtra (Education Department)</p>
               </div>
             `
           })
