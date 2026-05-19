@@ -43,8 +43,12 @@ serve(async (req) => {
     const order_id = payment.order_id;
 
     // 1. Save to Supabase DB
-    const supabaseUrl = "https://ehnxtthhtjyijerayfqn.supabase.co"
+    const supabaseUrl = Deno.env.get('SUPABASE_URL') || ''
     const supabaseKey = Deno.env.get('SERVICE_ROLE_KEY') || ''
+
+    if (!supabaseUrl || !supabaseKey) {
+      throw new Error("Supabase credentials (SUPABASE_URL or SERVICE_ROLE_KEY) are not configured.")
+    }
     const supabase = createClient(supabaseUrl, supabaseKey)
 
     const { data: dbData, error: dbError } = await supabase

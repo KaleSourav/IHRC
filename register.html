@@ -399,6 +399,7 @@
         const SUPABASE_PROJECT_URL = "https://ehnxtthhtjyijerayfqn.supabase.co";
         const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVobnh0dGhodGp5aWplcmF5ZnFuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0OTY2MjMsImV4cCI6MjA2MTA3MjYyM30.WJjNgkKZPEH7OU-6fAlWU-iL8lE6Qc4T3C1MH3-0VMU";
         const CREATE_ORDER_URL = `${SUPABASE_PROJECT_URL}/functions/v1/create-order`;
+        const VERIFY_ORDER_URL = `${SUPABASE_PROJECT_URL}/functions/v1/verify-payment-frontend`;
 
         const form = document.getElementById('registrationForm');
         const submitBtn = document.getElementById('submitBtn');
@@ -450,9 +451,36 @@
                     name: "IHRC Maharashtra (Education Department)",
                     description: "Workshop Registration: AI & ChatGPT",
                     order_id: data.order_id,
-                    handler: function (response) {
-                        // Payment was successful. Webhook will verify. 
-                        window.location.href = "success.html";
+                    handler: async function (response) {
+                        // ✅ Critical: Verify payment signature on the server before redirecting.
+                        // This prevents users who close/tamper with the popup from landing on success.html.
+                        try {
+                            const verifyResponse = await fetch(VERIFY_ORDER_URL, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'apikey': SUPABASE_ANON_KEY,
+                                    'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                                },
+                                body: JSON.stringify({
+                                    razorpay_order_id: response.razorpay_order_id,
+                                    razorpay_payment_id: response.razorpay_payment_id,
+                                    razorpay_signature: response.razorpay_signature,
+                                })
+                            });
+
+                            const verifyData = await verifyResponse.json();
+
+                            if (verifyData.verified === true) {
+                                window.location.href = "success.html";
+                            } else {
+                                console.error("Payment verification failed:", verifyData.error);
+                                window.location.href = "failure.html";
+                            }
+                        } catch (err) {
+                            console.error("Error during payment verification:", err);
+                            window.location.href = "failure.html";
+                        }
                     },
                     prefill: {
                         name: formData.name,
