@@ -74,7 +74,7 @@
     <main class="flex-grow w-full max-w-[1280px] mx-auto px-gutter py-stack-lg">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
-            <!-- Left Column -->
+            <!-- Left Column: Workshop Info -->
             <div class="lg:col-span-7 flex flex-col gap-stack-md">
                 <div>
                     <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container rounded-sm mb-4">
@@ -83,21 +83,27 @@
                     </div>
                     <h1 class="font-display text-display text-on-surface mb-6">Effective Communication</h1>
                     <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
-                        This workshop is designed to help you speak with confidence and clarity in every situation.
-                        From structuring your ideas and expressing yourself creatively to overcoming hesitation and
-                        connecting deeply with others, you will develop your authentic communication style.
-                        <br><br>
-                        The session focuses on real-world practice so that you leave ready to speak, present, and
-                        lead with confidence — standing out effortlessly in any room.
+                        This workshop was designed to help participants speak with confidence and clarity in every situation.
+                        From structuring ideas and expressing creatively to overcoming hesitation and
+                        connecting deeply with others — attendees developed their authentic communication style through real-world practice.
                     </p>
                     <div class="flex flex-wrap items-center gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
+                                <span class="material-symbols-outlined">calendar_today</span>
+                            </div>
+                            <div>
+                                <div class="font-label-md text-label-md text-on-surface">Date</div>
+                                <div class="font-body-md text-body-md text-on-surface-variant">Date to be announced soon</div>
+                            </div>
+                        </div>
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
                                 <span class="material-symbols-outlined">schedule</span>
                             </div>
                             <div>
                                 <div class="font-label-md text-label-md text-on-surface">Duration</div>
-                                <div class="font-body-md text-body-md text-on-surface-variant">2 hours</div>
+                                <div class="font-body-md text-body-md text-on-surface-variant">1 hour</div>
                             </div>
                         </div>
                         <div class="flex items-center gap-3">
@@ -146,30 +152,57 @@
                             <div class="w-8 h-8 rounded bg-secondary-fixed flex items-center justify-center text-secondary mb-4">
                                 <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">diversity_3</span>
                             </div>
-                            <h3 class="font-h3 text-h3 text-on-surface !text-[20px] mb-2">Deep Connection & Impact</h3>
+                            <h3 class="font-h3 text-h3 text-on-surface !text-[20px] mb-2">Deep Connection &amp; Impact</h3>
                             <p class="font-body-md text-body-md text-on-surface-variant">Master the art of active listening, empathy, and authentic dialogue that builds lasting relationships and trust.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Instructor -->
+                <!-- Instructor Bio -->
                 <div class="mt-4">
-                    <h2 class="font-h3 text-h3 text-on-surface mb-6">Lead Instructor</h2>
-                    <div class="flex flex-col sm:flex-row gap-6 p-6 bg-surface-container-low rounded-xl border border-outline-variant">
-                        <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-surface-container-lowest shadow-sm">
-                            <img src="akriti_jaiswal.jpeg" alt="Mrs. Akriti Jaiswal"
-                                class="w-full h-full object-cover object-top"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-                            <div class="w-full h-full bg-primary-fixed text-primary-container hidden items-center justify-center text-3xl font-bold">AJ</div>
+                    <h2 class="font-h3 text-h3 text-on-surface mb-6">About the Instructor</h2>
+                    <div class="bg-gradient-to-br from-[#001F3F] to-[#0a3060] rounded-2xl overflow-hidden shadow-lg">
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 p-8 pb-6">
+                            <div class="w-28 h-28 rounded-full overflow-hidden flex-shrink-0 border-4 border-white/20 shadow-xl">
+                                <img src="akriti_jaiswal.jpeg" alt="Mrs. Akriti Jaiswal"
+                                    class="w-full h-full object-cover object-top"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                                <div class="w-full h-full bg-white/10 text-white hidden items-center justify-center text-3xl font-bold font-['Inter']">AJ</div>
+                            </div>
+                            <div class="text-center sm:text-left">
+                                <div class="inline-flex items-center gap-1.5 bg-[#FF851B]/20 text-[#FF851B] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-[#FF851B]/30">
+                                    <span class="material-symbols-outlined text-[14px]">workspace_premium</span>
+                                    Communication Skills Expert
+                                </div>
+                                <h3 class="font-['Inter'] text-2xl font-bold text-white mb-1">Mrs. Akriti Jaiswal</h3>
+                                <p class="font-['Inter'] text-sm text-slate-300">8+ Years of Experience &nbsp;&middot;&nbsp; 200+ Professionals Trained</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="font-h3 text-h3 text-on-surface mb-1">Mrs. Akriti Jaiswal</h3>
-                            <p class="font-label-md text-label-md text-primary-container mb-3">Communication Trainer & Workshop Facilitator</p>
-                            <p class="font-body-md text-body-md text-on-surface-variant mb-2">
-                                Mrs. Akriti Jaiswal is an experienced communication professional dedicated to helping individuals unlock their authentic voice. She has conducted multiple sessions focused on confidence building and practical speaking skills.
+                        <div class="px-8 pb-8 space-y-4">
+                            <div class="h-px bg-white/10 mb-2"></div>
+                            <p class="font-['Inter'] text-[15px] text-slate-200 leading-relaxed italic border-l-4 border-[#FF851B] pl-4">
+                                "Welcome, beautiful souls! I am a Communication Skills Expert with 8+ years of experience helping individuals transform the way they speak, connect, and grow."
                             </p>
-                            <p class="font-body-md text-body-md text-on-surface-variant">
-                                Her warm, encouraging approach makes it easy for participants at all levels to overcome hesitation and communicate with real impact.
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                                <div class="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10">
+                                    <span class="material-symbols-outlined text-[#FF851B] text-[22px] mt-0.5 flex-shrink-0">mic</span>
+                                    <p class="font-['Inter'] text-sm text-slate-300 leading-relaxed">Trained <strong class="text-white">200+ professionals</strong>, entrepreneurs, students &amp; corporate employees to communicate with confidence.</p>
+                                </div>
+                                <div class="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10">
+                                    <span class="material-symbols-outlined text-[#FF851B] text-[22px] mt-0.5 flex-shrink-0">lightbulb</span>
+                                    <p class="font-['Inter'] text-sm text-slate-300 leading-relaxed">Mission — help people <strong class="text-white">overcome hesitation</strong>, express ideas clearly, and unlock opportunities through powerful communication.</p>
+                                </div>
+                                <div class="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10">
+                                    <span class="material-symbols-outlined text-[#FF851B] text-[22px] mt-0.5 flex-shrink-0">rocket_launch</span>
+                                    <p class="font-['Inter'] text-sm text-slate-300 leading-relaxed">Students achieved <strong class="text-white">career growth, leadership roles</strong>, successful business presentations &amp; greater self-confidence.</p>
+                                </div>
+                                <div class="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10">
+                                    <span class="material-symbols-outlined text-[#FF851B] text-[22px] mt-0.5 flex-shrink-0">handshake</span>
+                                    <p class="font-['Inter'] text-sm text-slate-300 leading-relaxed">Communication is about <strong class="text-white">creating connections, building trust</strong> and inspiring others — not just speaking.</p>
+                                </div>
+                            </div>
+                            <p class="font-['Inter'] text-sm text-slate-400 leading-relaxed pt-2">
+                                Through practical training, personalized guidance, and real-life strategies, she helps individuals become the best version of themselves. Every conversation has the power to change a life — and she is passionate about helping people discover that power within themselves.
                             </p>
                         </div>
                     </div>
@@ -227,8 +260,121 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
+
+
+    <!-- PARTICIPANT REVIEWS SECTION -->
+    <section class="bg-[#001F3F] py-20 w-full overflow-hidden">
+        <div class="max-w-[1280px] mx-auto px-6 mb-12">
+            <div class="text-center">
+                <div class="inline-flex items-center gap-2 bg-white/10 text-white text-xs font-['Inter'] font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5 border border-white/20">
+                    <span class="material-symbols-outlined text-[16px] text-[#FF851B]">format_quote</span>
+                    Participant Reviews
+                </div>
+                <h2 class="font-['Inter'] text-[32px] md:text-[40px] font-bold text-white leading-tight mb-3">
+                    What They Said About<br>
+                    <span class="text-[#FF851B]">Effective Communication</span>
+                </h2>
+                <p class="font-['Inter'] text-base text-slate-400 max-w-xl mx-auto">Real feedback from participants who attended the Date to be announced soon workshop with Mrs. Akriti Jaiswal.</p>
+            </div>
+        </div>
+        <div class="reviews-wrapper space-y-5">
+            <!-- Row 1: scrolls LEFT -->
+            <div class="reviews-track">
+                <div class="reviews-inner">
+                    <img src="review_01.jpeg" alt="Review 1" class="review-img" loading="lazy" />
+                    <img src="review_02.jpeg" alt="Review 2" class="review-img" loading="lazy" />
+                    <img src="review_03.jpeg" alt="Review 3" class="review-img" loading="lazy" />
+                    <img src="review_04.jpeg" alt="Review 4" class="review-img" loading="lazy" />
+                    <img src="review_05.jpeg" alt="Review 5" class="review-img" loading="lazy" />
+                    <img src="review_06.jpeg" alt="Review 6" class="review-img" loading="lazy" />
+                    <img src="review_07.jpeg" alt="Review 7" class="review-img" loading="lazy" />
+                    <!-- Duplicate for seamless loop -->
+                    <img src="review_01.jpeg" alt="Review 1" class="review-img" loading="lazy" />
+                    <img src="review_02.jpeg" alt="Review 2" class="review-img" loading="lazy" />
+                    <img src="review_03.jpeg" alt="Review 3" class="review-img" loading="lazy" />
+                    <img src="review_04.jpeg" alt="Review 4" class="review-img" loading="lazy" />
+                    <img src="review_05.jpeg" alt="Review 5" class="review-img" loading="lazy" />
+                    <img src="review_06.jpeg" alt="Review 6" class="review-img" loading="lazy" />
+                    <img src="review_07.jpeg" alt="Review 7" class="review-img" loading="lazy" />
+                </div>
+            </div>
+            <!-- Row 2: scrolls RIGHT -->
+            <div class="reviews-track">
+                <div class="reviews-inner reviews-inner-reverse">
+                    <img src="review_08.jpeg" alt="Review 8" class="review-img" loading="lazy" />
+                    <img src="review_09.jpeg" alt="Review 9" class="review-img" loading="lazy" />
+                    <img src="review_10.jpeg" alt="Review 10" class="review-img" loading="lazy" />
+                    <img src="review_11.jpeg" alt="Review 11" class="review-img" loading="lazy" />
+                    <img src="review_12.jpeg" alt="Review 12" class="review-img" loading="lazy" />
+                    <img src="review_13.jpeg" alt="Review 13" class="review-img" loading="lazy" />
+                    <!-- Duplicate for seamless loop -->
+                    <img src="review_08.jpeg" alt="Review 8" class="review-img" loading="lazy" />
+                    <img src="review_09.jpeg" alt="Review 9" class="review-img" loading="lazy" />
+                    <img src="review_10.jpeg" alt="Review 10" class="review-img" loading="lazy" />
+                    <img src="review_11.jpeg" alt="Review 11" class="review-img" loading="lazy" />
+                    <img src="review_12.jpeg" alt="Review 12" class="review-img" loading="lazy" />
+                    <img src="review_13.jpeg" alt="Review 13" class="review-img" loading="lazy" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[1280px] mx-auto px-6 mt-10 text-center">
+            <p class="font-['Inter'] text-slate-400 text-sm">All reviews are unedited, genuine feedback from workshop participants.</p>
+        </div>
+    </section>
+
+    <style>
+        .reviews-track { overflow: hidden; width: 100%; }
+        .reviews-inner {
+            display: flex; gap: 16px; width: max-content;
+            animation: scroll-left 40s linear infinite;
+            will-change: transform;
+        }
+        .reviews-inner-reverse { animation: scroll-right 40s linear infinite; }
+        .reviews-track:hover .reviews-inner,
+        .reviews-track:hover .reviews-inner-reverse { animation-play-state: paused; }
+                        .review-img {
+            height: 350px; 
+            width: 280px; 
+            object-fit: contain; 
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+            border: 2px solid rgba(255,255,255,0.08);
+            flex-shrink: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+            background-color: #001F3F;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+        }
+        .review-img:hover {
+            transform: scale(1.04) translateY(-4px) translateZ(0);
+            -webkit-transform: scale(1.04) translateY(-4px) translateZ(0);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+            border-color: rgba(255, 133, 27, 0.6);
+        }
+        @media (max-width: 768px) {
+            .review-img { 
+                height: 280px; 
+                width: 220px; 
+            }
+            .reviews-inner { animation: scroll-left 25s linear infinite; }
+            .reviews-inner-reverse { animation: scroll-right 25s linear infinite; }
+        }
+        @keyframes scroll-left {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes scroll-right {
+            0%   { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reviews-inner, .reviews-inner-reverse { animation: none; }
+        }
+    </style>
 
     <!-- Footer -->
     <footer class="bg-[#001F3F] text-white font-['Inter'] text-sm leading-relaxed w-full border-t border-slate-800">
@@ -253,7 +399,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         const SUPABASE_PROJECT_URL = "https://ehnxtthhtjyijerayfqn.supabase.co";

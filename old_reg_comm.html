@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Effective Communication - Workshop Registration | IHRC Maharashtra</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#303030","inverse-on-surface": "#f1f1f1","on-primary": "#ffffff",
+                        "outline": "#74777f","surface-bright": "#f9f9f9","secondary": "#964900",
+                        "on-error": "#ffffff","surface-variant": "#e2e2e2","surface-dim": "#dadada",
+                        "error-container": "#ffdad6","surface-container": "#eeeeee","primary-container": "#001f3f",
+                        "background": "#f9f9f9","secondary-fixed": "#ffdcc7","primary-fixed": "#d4e3ff",
+                        "on-secondary": "#ffffff","inverse-primary": "#afc8f0","primary-fixed-dim": "#afc8f0",
+                        "primary": "#000613","outline-variant": "#c4c6cf","on-surface-variant": "#43474e",
+                        "on-background": "#1b1b1b","surface": "#f9f9f9","on-tertiary": "#ffffff",
+                        "surface-tint": "#476083","on-primary-container": "#6f88ad",
+                        "surface-container-high": "#e8e8e8","surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff","error": "#ba1a1a","secondary-container": "#ff851b",
+                        "on-surface": "#1b1b1b","on-primary-fixed-variant": "#2f486a",
+                        "on-error-container": "#93000a","surface-container-highest": "#e2e2e2"
+                    },
+                    "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+                    "spacing": {"stack-lg": "64px","unit": "8px","stack-md": "32px","stack-sm": "16px","container-max": "1280px","gutter": "24px","margin": "32px"},
+                    "fontFamily": {"h3": ["Inter"],"h1": ["Inter"],"h2": ["Inter"],"display": ["Inter"],"body-md": ["Inter"],"body-lg": ["Inter"],"label-md": ["Inter"],"caption": ["Inter"]},
+                    "fontSize": {
+                        "h3": ["24px", {"lineHeight": "1.4","letterSpacing": "0","fontWeight": "600"}],
+                        "h1": ["36px", {"lineHeight": "1.2","letterSpacing": "-0.01em","fontWeight": "700"}],
+                        "h2": ["30px", {"lineHeight": "1.3","letterSpacing": "-0.01em","fontWeight": "600"}],
+                        "display": ["48px", {"lineHeight": "1.1","letterSpacing": "-0.02em","fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6","letterSpacing": "0","fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6","letterSpacing": "0","fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1","letterSpacing": "0.02em","fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "1.4","letterSpacing": "0","fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+    <!-- Nav -->
+    <nav class="bg-white dark:bg-slate-950 text-[#001F3F] font-['Inter'] text-sm font-semibold tracking-wide uppercase sticky top-0 z-50 border-b border-slate-200 shadow-sm">
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center gap-2 text-xl font-bold tracking-tighter text-[#001F3F]" href="index.html">
+                    <img src="logo.png" alt="IHRC Logo" class="h-10 w-auto" />
+                    IHRC Maharashtra (Education Department)
+                </a>
+                <div class="hidden md:flex gap-6 items-center h-full">
+                    <a class="text-[#FF851B] border-b-2 border-[#FF851B] pb-1 hover:bg-slate-50 transition-all duration-200 flex items-center h-full pt-1" href="workshops.html">Workshops</a>
+                    <a class="text-[#001F3F] hover:text-[#FF851B] hover:bg-slate-50 transition-all duration-200 flex items-center h-full" href="about.html">About</a>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="register-communication.html" class="bg-[#FF851B] text-white font-['Inter'] text-sm font-semibold tracking-wide uppercase px-6 py-2 rounded shadow-sm hover:opacity-90 transition-all duration-200 inline-block">Enroll Now</a>
+                <img src="dip_logo.jpeg" alt="DIP Logo" class="h-10 w-auto" />
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="flex-grow w-full max-w-[1280px] mx-auto px-gutter py-stack-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+            <!-- Left Column -->
+            <div class="lg:col-span-7 flex flex-col gap-stack-md">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container rounded-sm mb-4">
+                        <span class="material-symbols-outlined text-[16px] text-primary-container">school</span>
+                        <span class="font-label-md text-label-md text-primary-container uppercase tracking-wider">Upcoming Workshop</span>
+                    </div>
+                    <h1 class="font-display text-display text-on-surface mb-6">Effective Communication</h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8">
+                        This workshop is designed to help you speak with confidence and clarity in every situation.
+                        From structuring your ideas and expressing yourself creatively to overcoming hesitation and
+                        connecting deeply with others, you will develop your authentic communication style.
+                        <br><br>
+                        The session focuses on real-world practice so that you leave ready to speak, present, and
+                        lead with confidence — standing out effortlessly in any room.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
+                                <span class="material-symbols-outlined">schedule</span>
+                            </div>
+                            <div>
+                                <div class="font-label-md text-label-md text-on-surface">Duration</div>
+                                <div class="font-body-md text-body-md text-on-surface-variant">2 hours</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
+                                <span class="material-symbols-outlined">payments</span>
+                            </div>
+                            <div>
+                                <div class="font-label-md text-label-md text-on-surface">Registration Fee</div>
+                                <div class="font-body-md text-body-md text-on-surface-variant">
+                                    <span class="line-through text-outline text-sm">₹999</span>
+                                    <span class="font-bold text-secondary-container ml-1">₹99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-t border-outline-variant my-2" />
+
+                <!-- Curriculum -->
+                <div>
+                    <h2 class="font-h3 text-h3 text-on-surface mb-6">Curriculum Highlights</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+                            <div class="w-8 h-8 rounded bg-secondary-fixed flex items-center justify-center text-secondary mb-4">
+                                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">record_voice_over</span>
+                            </div>
+                            <h3 class="font-h3 text-h3 text-on-surface !text-[20px] mb-2">Speaking with Confidence</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Overcome hesitation, manage nerves, and build a commanding presence that naturally captures attention in any room.</p>
+                        </div>
+                        <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+                            <div class="w-8 h-8 rounded bg-secondary-fixed flex items-center justify-center text-secondary mb-4">
+                                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">edit_note</span>
+                            </div>
+                            <h3 class="font-h3 text-h3 text-on-surface !text-[20px] mb-2">Structuring Your Ideas</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Learn to organise thoughts clearly so your message is always easy to follow, persuasive, and hard to forget.</p>
+                        </div>
+                        <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+                            <div class="w-8 h-8 rounded bg-secondary-fixed flex items-center justify-center text-secondary mb-4">
+                                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">auto_stories</span>
+                            </div>
+                            <h3 class="font-h3 text-h3 text-on-surface !text-[20px] mb-2">Creative Expression</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Discover storytelling techniques and creative tools to express yourself with personality, depth, and emotional impact.</p>
+                        </div>
+                        <div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-6 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow">
+                            <div class="w-8 h-8 rounded bg-secondary-fixed flex items-center justify-center text-secondary mb-4">
+                                <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">diversity_3</span>
+                            </div>
+                            <h3 class="font-h3 text-h3 text-on-surface !text-[20px] mb-2">Deep Connection & Impact</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Master the art of active listening, empathy, and authentic dialogue that builds lasting relationships and trust.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor -->
+                <div class="mt-4">
+                    <h2 class="font-h3 text-h3 text-on-surface mb-6">Lead Instructor</h2>
+                    <div class="flex flex-col sm:flex-row gap-6 p-6 bg-surface-container-low rounded-xl border border-outline-variant">
+                        <div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-surface-container-lowest shadow-sm">
+                            <img src="akriti_jaiswal.jpeg" alt="Mrs. Akriti Jaiswal"
+                                class="w-full h-full object-cover object-top"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                            <div class="w-full h-full bg-primary-fixed text-primary-container hidden items-center justify-center text-3xl font-bold">AJ</div>
+                        </div>
+                        <div>
+                            <h3 class="font-h3 text-h3 text-on-surface mb-1">Mrs. Akriti Jaiswal</h3>
+                            <p class="font-label-md text-label-md text-primary-container mb-3">Communication Trainer & Workshop Facilitator</p>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-2">
+                                Mrs. Akriti Jaiswal is an experienced communication professional dedicated to helping individuals unlock their authentic voice. She has conducted multiple sessions focused on confidence building and practical speaking skills.
+                            </p>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                Her warm, encouraging approach makes it easy for participants at all levels to overcome hesitation and communicate with real impact.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Registration Form -->
+            <div class="lg:col-span-5 relative">
+                <div class="sticky top-[100px] bg-surface-container-lowest border border-outline-variant rounded-xl shadow-[0_4px_16px_rgba(0,0,0,0.06)] p-8">
+                    <div class="text-center mb-8">
+                        <h2 class="font-h2 text-h2 text-on-surface mb-2">Secure Registration</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Reserve your seat</p>
+                    </div>
+                    <form id="registrationForm" class="flex flex-col gap-5">
+                        <div>
+                            <label class="font-label-md text-label-md text-on-surface block mb-2" for="fullName">Name</label>
+                            <input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="fullName" name="fullName" placeholder="Jane Doe" type="text" required />
+                        </div>
+                        <div>
+                            <label class="font-label-md text-label-md text-on-surface block mb-2" for="email">Email</label>
+                            <input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="email" name="email" placeholder="jane.doe@example.com" type="email" required />
+                        </div>
+                        <div>
+                            <label class="font-label-md text-label-md text-on-surface block mb-2" for="phone">Phone Number</label>
+                            <input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="phone" name="phone" placeholder="+91 00000 00000" type="tel" required />
+                        </div>
+                        <div>
+                            <label class="font-label-md text-label-md text-on-surface block mb-2" for="gender">Gender</label>
+                            <select class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all" id="gender" name="gender" required>
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="font-label-md text-label-md text-on-surface block mb-2" for="occupation">Occupation</label>
+                            <input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-4 py-3 font-body-md text-body-md text-on-surface focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all placeholder:text-outline" id="occupation" name="occupation" placeholder="e.g. Student, Engineer, Teacher" type="text" required />
+                        </div>
+                        <button id="submitBtn" class="w-full mt-4 bg-secondary-container text-on-primary font-label-md text-label-md uppercase tracking-wide py-4 rounded-lg hover:bg-secondary transition-colors focus:ring-2 focus:ring-offset-2 focus:ring-secondary-container flex justify-center items-center gap-2" type="submit">
+                            <span id="btnText">Pay Now ₹99</span>
+                            <span id="btnSpinner" class="hidden material-symbols-outlined animate-spin text-[18px]">progress_activity</span>
+                        </button>
+                    </form>
+                    <div class="mt-6 pt-6 border-t border-outline-variant flex justify-center gap-6">
+                        <div class="flex items-center gap-2 text-on-surface-variant">
+                            <span class="material-symbols-outlined text-[18px]">lock</span>
+                            <span class="font-caption text-caption">SSL Secure</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-on-surface-variant">
+                            <span class="material-symbols-outlined text-[18px]">verified</span>
+                            <span class="font-caption text-caption">Verified Institution</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#001F3F] text-white font-['Inter'] text-sm leading-relaxed w-full border-t border-slate-800">
+        <div class="max-w-[1280px] mx-auto py-16 px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+                <div class="md:col-span-1">
+                    <span class="text-lg font-bold text-white mb-4 block">IHRC Maharashtra (Education Department)</span>
+                    <p class="text-slate-300 mt-2">© 2025 International Human Rights Council Maharashtra. All Rights Reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇺🇸 US Headquarters</h4>
+                    <p class="text-slate-300 leading-relaxed">1126 Pitner Avenue, Evanston,<br>IL 60202, United States<br><a href="tel:+12242550036" class="hover:text-[#FF851B] transition-colors">+1 224 255 0036</a><br><a href="mailto:info@ihrc.in" class="hover:text-[#FF851B] transition-colors">info@ihrc.in</a></p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇨🇭 Switzerland Headquarters</h4>
+                    <p class="text-slate-300 leading-relaxed">31 Rue Vollandes, 1207 Genèva,<br>Switzerland<br><a href="tel:+41779664839" class="hover:text-[#FF851B] transition-colors">+41 77 966 4839</a><br><a href="mailto:info@ihrc-geneve.org" class="hover:text-[#FF851B] transition-colors">info@ihrc-geneve.org</a></p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇮🇳 India Headquarters</h4>
+                    <p class="text-slate-300 leading-relaxed">54 Raj Chambers, Alibhai Premji Marg,<br>Grant Road, Mumbai - 400007<br><a href="tel:+917208802565" class="hover:text-[#FF851B] transition-colors">+91 72088 02565</a><br><a href="mailto:ihrc777@gmail.com" class="hover:text-[#FF851B] transition-colors">ihrc777@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        const SUPABASE_PROJECT_URL = "https://ehnxtthhtjyijerayfqn.supabase.co";
+        const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVobnh0dGhodGp5aWplcmF5ZnFuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0OTY2MjMsImV4cCI6MjA2MTA3MjYyM30.WJjNgkKZPEH7OU-6fAlWU-iL8lE6Qc4T3C1MH3-0VMU";
+        const CREATE_ORDER_URL = `${SUPABASE_PROJECT_URL}/functions/v1/create-order`;
+        const VERIFY_ORDER_URL = `${SUPABASE_PROJECT_URL}/functions/v1/verify-payment-frontend`;
+
+        const form = document.getElementById('registrationForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const btnSpinner = document.getElementById('btnSpinner');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                name: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                gender: document.getElementById('gender').value,
+                occupation: document.getElementById('occupation').value,
+                workshop: 'Effective Communication'
+            };
+
+            try {
+                submitBtn.disabled = true;
+                submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+                btnText.innerText = "Processing...";
+                btnSpinner.classList.remove('hidden');
+
+                const response = await fetch(CREATE_ORDER_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'apikey': SUPABASE_ANON_KEY,
+                        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Failed to create order');
+                }
+
+                const data = await response.json();
+
+                const options = {
+                    key: data.key_id,
+                    amount: data.amount,
+                    currency: "INR",
+                    name: "IHRC Maharashtra (Education Department)",
+                    description: "Workshop Registration: Effective Communication",
+                    order_id: data.order_id,
+                    handler: async function (response) {
+                        try {
+                            const verifyResponse = await fetch(VERIFY_ORDER_URL, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'apikey': SUPABASE_ANON_KEY,
+                                    'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                                },
+                                body: JSON.stringify({
+                                    razorpay_order_id: response.razorpay_order_id,
+                                    razorpay_payment_id: response.razorpay_payment_id,
+                                    razorpay_signature: response.razorpay_signature,
+                                })
+                            });
+                            const verifyData = await verifyResponse.json();
+                            if (verifyData.verified === true) {
+                                window.location.href = "success.html";
+                            } else {
+                                window.location.href = "failure.html";
+                            }
+                        } catch (err) {
+                            window.location.href = "failure.html";
+                        }
+                    },
+                    prefill: {
+                        name: formData.name,
+                        email: formData.email,
+                        contact: formData.phone
+                    },
+                    theme: { color: "#FF851B" }
+                };
+
+                const rzp1 = new window.Razorpay(options);
+                rzp1.on('payment.failed', function () {
+                    window.location.href = "failure.html";
+                });
+                rzp1.open();
+
+            } catch (error) {
+                console.error("Error initiating payment:", error);
+                alert("Error initiating payment. Please try again later.");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                btnText.innerText = "Pay Now ₹99";
+                btnSpinner.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

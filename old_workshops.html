@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>IHRC Maharashtra (Education Department) - Workshop Catalogue</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#303030",
+                        "inverse-on-surface": "#f1f1f1",
+                        "tertiary-fixed-dim": "#fdb69a",
+                        "on-tertiary-container": "#b5785f",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#311300",
+                        "on-primary-fixed": "#001c3a",
+                        "outline": "#74777f",
+                        "on-secondary-fixed-variant": "#723600",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-fixed": "#351002",
+                        "secondary-fixed-dim": "#ffb787",
+                        "secondary": "#964900",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#eeeeee",
+                        "primary-container": "#001f3f",
+                        "background": "#f9f9f9",
+                        "secondary-fixed": "#ffdcc7",
+                        "primary-fixed": "#d4e3ff",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#110200",
+                        "on-tertiary-fixed-variant": "#6b3a25",
+                        "inverse-primary": "#afc8f0",
+                        "tertiary-fixed": "#ffdbce",
+                        "primary-fixed-dim": "#afc8f0",
+                        "primary": "#000613",
+                        "outline-variant": "#c4c6cf",
+                        "on-surface-variant": "#43474e",
+                        "on-background": "#1b1b1b",
+                        "surface": "#f9f9f9",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#391303",
+                        "surface-tint": "#476083",
+                        "on-primary-container": "#6f88ad",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#ff851b",
+                        "on-surface": "#1b1b1b",
+                        "on-secondary-container": "#612d00",
+                        "on-primary-fixed-variant": "#2f486a",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "64px",
+                        "unit": "8px",
+                        "stack-md": "32px",
+                        "stack-sm": "16px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin": "32px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Inter"],
+                        "h1": ["Inter"],
+                        "h2": ["Inter"],
+                        "display": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "h1": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "h2": ["30px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+    <!-- TopNavBar (Shared Component) -->
+    <nav
+        class="bg-white dark:bg-slate-950 docked full-width top-0 sticky z-50 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none">
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center gap-2 text-xl font-bold tracking-tighter text-[#001F3F] dark:text-white"
+                    href="index.html">
+                    <img src="logo.png" alt="IHRC Logo" class="h-10 w-auto" />
+                    IHRC Maharashtra (Education Department)
+                </a>
+                <div class="hidden md:flex gap-6 items-center">
+                    <a class="text-[#FF851B] border-b-2 border-[#FF851B] pb-1 font-['Inter'] text-sm font-semibold tracking-wide uppercase active:opacity-80 transition-opacity"
+                        href="workshops.html">Workshops</a>
+
+                    <a class="text-[#001F3F] dark:text-slate-300 hover:text-[#FF851B] font-['Inter'] text-sm font-semibold tracking-wide uppercase hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 py-2 px-3 rounded"
+                        href="about.html">About</a>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button
+                    class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] dark:text-slate-100 hover:bg-slate-50 dark:hover:bg-slate-900 transition-all duration-200 py-2 px-4 rounded border border-transparent hover:border-slate-200">Contact
+                    Us</button>
+                <a href="register.html"
+                    class="font-['Inter'] text-sm font-semibold tracking-wide uppercase bg-secondary-container text-white px-6 py-2.5 rounded hover:bg-opacity-90 transition-all shadow-[0_4px_12px_rgba(255,133,27,0.2)] inline-block">Enroll
+                    Now</a>
+                <img src="dip_logo.jpeg" alt="DIP Logo" class="h-10 w-auto" />
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-primary-container p-2" aria-expanded="false"
+                aria-controls="mobile-menu" onclick="toggleMobileMenu()">
+                <span id="menu-icon" class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="md:hidden hidden flex-col bg-white border-t border-slate-200 shadow-lg px-6 py-4 gap-2"
+            role="navigation">
+            <a class="text-[#FF851B] font-['Inter'] text-sm font-semibold tracking-wide uppercase py-3 border-b border-slate-100"
+                href="workshops.html" onclick="closeMobileMenu()">Workshops</a>
+
+            <a class="text-[#001F3F] font-['Inter'] text-sm font-semibold tracking-wide uppercase py-3 border-b border-slate-100 hover:text-[#FF851B] transition-colors"
+                href="about.html" onclick="closeMobileMenu()">About</a>
+            <div class="flex flex-col gap-3 pt-3">
+                <button
+                    class="font-['Inter'] text-sm font-semibold tracking-wide uppercase text-[#001F3F] border border-slate-300 rounded py-2.5 px-4 hover:bg-slate-50 transition-colors text-left">Contact
+                    Us</button>
+                <a href="register.html"
+                    class="font-['Inter'] text-sm font-semibold tracking-wide uppercase bg-[#FF851B] text-white py-2.5 px-4 rounded text-center hover:bg-[#e67615] transition-colors"
+                    onclick="closeMobileMenu()">Enroll Now</a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            const btn = document.getElementById('mobile-menu-btn');
+            const isOpen = !menu.classList.contains('hidden');
+            if (isOpen) {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                icon.textContent = 'menu';
+                btn.setAttribute('aria-expanded', 'false');
+            } else {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                icon.textContent = 'close';
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            const btn = document.getElementById('mobile-menu-btn');
+            menu.classList.add('hidden');
+            menu.classList.remove('flex');
+            icon.textContent = 'menu';
+            btn.setAttribute('aria-expanded', 'false');
+        }
+    </script>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-container-max mx-auto px-gutter py-stack-lg w-full">
+        <!-- Header & Search Section -->
+        <header
+            class="mb-stack-lg text-center md:text-left flex flex-col md:flex-row md:justify-between md:items-end gap-stack-md">
+            <div class="max-w-2xl">
+                <h1 class="font-h1 text-h1 text-primary-fixed mb-unit">Transformative Workshops</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">Empowering individuals through expert-led
+                    sessions in education, wellness, and future technologies.</p>
+            </div>
+            <div class="w-full md:w-[400px] relative">
+                <span
+                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+                <input
+                    class="w-full pl-12 pr-4 py-3 bg-surface-lowest border border-outline-variant rounded-lg focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-shadow font-body-md text-on-surface shadow-[0_4px_12px_rgba(0,0,0,0.03)] placeholder:text-outline"
+                    placeholder="Search workshops, topics, or instructors..." type="text" />
+            </div>
+        </header>
+        <!-- Category Filters -->
+        <div class="mb-stack-lg overflow-x-auto pb-4 -mx-gutter px-gutter md:mx-0 md:px-0 scrollbar-hide">
+            <div class="flex gap-3 min-w-max">
+                <button
+                    class="px-5 py-2 bg-primary-container text-on-primary rounded-full font-label-md text-label-md transition-colors shadow-[0_2px_8px_rgba(0,31,63,0.15)]">All</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">Education</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">Fitness</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">Parenting</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">Nutrition</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">Astrology</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">Mental
+                    Health</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">AI
+                    &amp; ChatGPT</button>
+                <button
+                    class="px-5 py-2 bg-surface border border-outline-variant text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">Competitive
+                    Exams</button>
+            </div>
+        </div>
+        <!-- Bento Grid Catalogue -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            <!-- Card 1: AI & Chatgpt -->
+            <article
+                class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden group hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
+                <div class="relative h-56 overflow-hidden">
+                    <img alt="AI & Chatgpt"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="professional workshop environment focused on AI with a projector showing ChatGPT logo"
+                        src="chatgpt_workshop.png" />
+                    <div
+                        class="absolute top-4 left-4 bg-primary-container text-on-primary px-3 py-1 rounded font-label-md text-label-md shadow-sm">
+                        AI &amp; ChatGPT
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-h3 text-h3 text-primary-fixed">AI &amp; Chatgpt</h3>
+                        <div class="flex flex-col items-end">
+                            <span class="text-sm text-on-surface-variant line-through">₹999</span>
+                            <span class="font-h3 text-h3 text-secondary-container font-bold">₹99</span>
+                        </div>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Practical prompt
+                        engineering and integration of ChatGPT into professional workflows.</p>
+                    <div class="flex items-center gap-4 mb-6 pt-4 border-t border-surface-variant">
+                        <div class="flex items-center gap-1.5 text-on-surface-variant font-caption text-caption">
+                            <span class="material-symbols-outlined text-[18px]">person</span>
+                            <span>Ms. Rakhi Sharma</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-on-surface-variant font-caption text-caption">
+                            <span class="material-symbols-outlined text-[18px]">schedule</span>
+                            <span>2hrs</span>
+                        </div>
+                    </div>
+                    <a href="register.html"
+                        class="block text-center w-full py-3 bg-white border border-primary-container text-primary-container rounded font-label-md text-label-md hover:bg-[#FF851B] hover:border-[#FF851B] hover:text-white transition-colors">Enroll
+                        Now</a>
+                </div>
+            </article>
+
+            <!-- Card 2: Perfume making -->
+            <article
+                class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden group hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
+                <div class="relative h-56 overflow-hidden">
+                    <img alt="Perfume making"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="Elegant glass perfume bottles with botanical elements on a clean surface"
+                        src="perfume_making1.png" />
+                    <div
+                        class="absolute top-4 left-4 bg-primary-container text-on-primary px-3 py-1 rounded font-label-md text-label-md shadow-sm">
+                        Crafts
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-h3 text-h3 text-primary-fixed">Perfume making</h3>
+                        <span
+                            class="font-h3 text-h3 text-secondary-container font-bold uppercase text-sm tracking-wider mt-1">Coming
+                            Soon</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Learn the delicate art
+                        of crafting your own signature scents from raw botanical elements.</p>
+                    <div class="flex flex-col gap-2 mb-6 pt-4 border-t border-surface-variant">
+                        <div class="flex items-center gap-1.5 text-on-surface-variant font-caption text-caption">
+                            <span class="material-symbols-outlined text-[18px]">person</span>
+                            <span>Anas</span>
+                        </div>
+                    </div>
+                    <a href="register.html"
+                        onclick="alert('Registration for this workshop is coming soon!'); return false;"
+                        class="block text-center w-full py-3 bg-white border border-primary-container text-primary-container rounded font-label-md text-label-md hover:bg-[#FF851B] hover:border-[#FF851B] hover:text-white transition-colors">Enroll
+                        Now</a>
+                </div>
+            </article>
+
+            <!-- Card 3: Effective Communication -->
+            <article
+                class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden group hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
+                <div class="relative h-56 overflow-hidden">
+                    <img alt="Effective Communication Workshop"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        src="communication_workshop.png" />
+                    <div
+                        class="absolute top-4 left-4 bg-primary-container text-on-primary px-3 py-1 rounded font-label-md text-label-md shadow-sm">
+                        Communication
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-h3 text-h3 text-primary-fixed">Effective Communication</h3>
+                        <div class="flex flex-col items-end">
+                            <span class="text-sm text-on-surface-variant line-through">₹999</span>
+                            <span class="font-h3 text-h3 text-secondary-container font-bold">₹99</span>
+                        </div>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Speak with confidence
+                        and clarity in any situation. Structure ideas, express creatively, and connect deeply with
+                        your audience.</p>
+                    <div class="flex items-center gap-4 mb-6 pt-4 border-t border-surface-variant">
+                        <div class="flex items-center gap-1.5 text-on-surface-variant font-caption text-caption">
+                            <span class="material-symbols-outlined text-[18px]">person</span>
+                            <span>Mrs. Akriti Jaiswal</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-on-surface-variant font-caption text-caption">
+                            <span class="material-symbols-outlined text-[18px]">schedule</span>
+                            <span>2hrs</span>
+                        </div>
+                    </div>
+                    <a href="register-communication.html"
+                        class="block text-center w-full py-3 bg-white border border-primary-container text-primary-container rounded font-label-md text-label-md hover:bg-[#FF851B] hover:border-[#FF851B] hover:text-white transition-colors">Enroll
+                        Now</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!-- Footer (Shared Component) -->
+    <footer class="bg-[#001F3F] dark:bg-black w-full border-t border-slate-800 mt-auto">
+        <div class="max-w-[1280px] mx-auto py-16 px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+                <div class="md:col-span-1">
+                    <span class="text-lg font-bold text-white mb-4 block font-['Inter']">IHRC Maharashtra (Education
+                        Department)</span>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">© 2024 International Human Rights
+                        Council Maharashtra. All Rights Reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇺🇸 US Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">1126 Pitner Avenue, Evanston,<br>IL
+                        60202, United States<br><a href="tel:+12242550036"
+                            class="hover:text-[#FF851B] transition-colors">+1 224 255 0036</a><br><a
+                            href="mailto:info@ihrc.in" class="hover:text-[#FF851B] transition-colors">info@ihrc.in</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇨🇭 Switzerland
+                        Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">31 Rue Vollandes, 1207
+                        Genèva,<br>Switzerland<br><a href="tel:+41779664839"
+                            class="hover:text-[#FF851B] transition-colors">+41 77 966 4839</a><br><a
+                            href="mailto:info@ihrc-geneve.org"
+                            class="hover:text-[#FF851B] transition-colors">info@ihrc-geneve.org</a></p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇮🇳 India Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">54 Raj Chambers, Alibhai Premji
+                        Marg,<br>Grant Road, Mumbai - 400007<br><a href="tel:+917208802565"
+                            class="hover:text-[#FF851B] transition-colors">+91 72088 02565</a><br><a
+                            href="mailto:ihrc777@gmail.com"
+                            class="hover:text-[#FF851B] transition-colors">ihrc777@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

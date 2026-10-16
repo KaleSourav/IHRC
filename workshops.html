@@ -349,40 +349,145 @@
             </article>
         </div>
     </main>
-    <!-- Footer (Shared Component) -->
+
+    <!-- REVIEWS GALLERY SECTION -->
+    <section class="bg-[#001F3F] py-20 w-full overflow-hidden">
+        <div class="max-w-[1280px] mx-auto px-6 mb-12">
+            <div class="text-center">
+                <div class="inline-flex items-center gap-2 bg-white/10 text-white text-xs font-['Inter'] font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-5 border border-white/20">
+                    <span class="material-symbols-outlined text-[16px] text-[#FF851B]">format_quote</span>
+                    Participant Reviews
+                </div>
+                <h2 class="font-['Inter'] text-[32px] md:text-[40px] font-bold text-white leading-tight mb-3">
+                    What They Said About<br>
+                    <span class="text-[#FF851B]">Effective Communication</span>
+                </h2>
+                <p class="font-['Inter'] text-base text-slate-400 max-w-xl mx-auto">Real feedback from participants who attended past workshops with Mrs. Akriti Jaiswal.</p>
+            </div>
+        </div>
+        <div class="reviews-wrapper space-y-5">
+            <!-- Row 1: scrolls LEFT -->
+            <div class="reviews-track">
+                <div class="reviews-inner">
+                    <img src="review_01.jpeg" alt="Review 1" class="review-img" loading="lazy" />
+                    <img src="review_02.jpeg" alt="Review 2" class="review-img" loading="lazy" />
+                    <img src="review_03.jpeg" alt="Review 3" class="review-img" loading="lazy" />
+                    <img src="review_04.jpeg" alt="Review 4" class="review-img" loading="lazy" />
+                    <img src="review_05.jpeg" alt="Review 5" class="review-img" loading="lazy" />
+                    <img src="review_06.jpeg" alt="Review 6" class="review-img" loading="lazy" />
+                    <img src="review_07.jpeg" alt="Review 7" class="review-img" loading="lazy" />
+                    <img src="review_01.jpeg" alt="Review 1" class="review-img" loading="lazy" />
+                    <img src="review_02.jpeg" alt="Review 2" class="review-img" loading="lazy" />
+                    <img src="review_03.jpeg" alt="Review 3" class="review-img" loading="lazy" />
+                    <img src="review_04.jpeg" alt="Review 4" class="review-img" loading="lazy" />
+                    <img src="review_05.jpeg" alt="Review 5" class="review-img" loading="lazy" />
+                    <img src="review_06.jpeg" alt="Review 6" class="review-img" loading="lazy" />
+                    <img src="review_07.jpeg" alt="Review 7" class="review-img" loading="lazy" />
+                </div>
+            </div>
+            <!-- Row 2: scrolls RIGHT -->
+            <div class="reviews-track">
+                <div class="reviews-inner reviews-inner-reverse">
+                    <img src="review_08.jpeg" alt="Review 8" class="review-img" loading="lazy" />
+                    <img src="review_09.jpeg" alt="Review 9" class="review-img" loading="lazy" />
+                    <img src="review_10.jpeg" alt="Review 10" class="review-img" loading="lazy" />
+                    <img src="review_11.jpeg" alt="Review 11" class="review-img" loading="lazy" />
+                    <img src="review_12.jpeg" alt="Review 12" class="review-img" loading="lazy" />
+                    <img src="review_13.jpeg" alt="Review 13" class="review-img" loading="lazy" />
+                    <img src="review_08.jpeg" alt="Review 8" class="review-img" loading="lazy" />
+                    <img src="review_09.jpeg" alt="Review 9" class="review-img" loading="lazy" />
+                    <img src="review_10.jpeg" alt="Review 10" class="review-img" loading="lazy" />
+                    <img src="review_11.jpeg" alt="Review 11" class="review-img" loading="lazy" />
+                    <img src="review_12.jpeg" alt="Review 12" class="review-img" loading="lazy" />
+                    <img src="review_13.jpeg" alt="Review 13" class="review-img" loading="lazy" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[1280px] mx-auto px-6 mt-10 text-center">
+            <p class="font-['Inter'] text-slate-400 text-sm">All reviews are unedited, genuine feedback from workshop participants.</p>
+        </div>
+    </section>
+
+    <style>
+        .reviews-track {
+            overflow: hidden;
+            width: 100%;
+        }
+        .reviews-inner {
+            display: flex;
+            gap: 16px;
+            width: max-content;
+            animation: scroll-left 40s linear infinite;
+            will-change: transform;
+        }
+        .reviews-inner-reverse {
+            animation: scroll-right 40s linear infinite;
+        }
+        .reviews-track:hover .reviews-inner,
+        .reviews-track:hover .reviews-inner-reverse {
+            animation-play-state: paused;
+        }
+                        .review-img {
+            height: 350px; 
+            width: 280px; 
+            object-fit: contain; 
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+            border: 2px solid rgba(255,255,255,0.08);
+            flex-shrink: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+            background-color: #001F3F;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+        }
+        .review-img:hover {
+            transform: scale(1.04) translateY(-4px) translateZ(0);
+            -webkit-transform: scale(1.04) translateY(-4px) translateZ(0);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+            border-color: rgba(255, 133, 27, 0.6);
+        }
+        @media (max-width: 768px) {
+            .review-img { 
+                height: 280px; 
+                width: 220px; 
+            }
+            .reviews-inner { animation: scroll-left 25s linear infinite; }
+            .reviews-inner-reverse { animation: scroll-right 25s linear infinite; }
+        }
+        @keyframes scroll-left {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes scroll-right {
+            0%   { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .reviews-inner,
+            .reviews-inner-reverse { animation: none; }
+        }
+    </style>
+
+    <!-- Footer -->
     <footer class="bg-[#001F3F] dark:bg-black w-full border-t border-slate-800 mt-auto">
         <div class="max-w-[1280px] mx-auto py-16 px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
                 <div class="md:col-span-1">
-                    <span class="text-lg font-bold text-white mb-4 block font-['Inter']">IHRC Maharashtra (Education
-                        Department)</span>
-                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">© 2024 International Human Rights
-                        Council Maharashtra. All Rights Reserved.</p>
+                    <span class="text-lg font-bold text-white mb-4 block font-['Inter']">IHRC Maharashtra (Education Department)</span>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">&copy; 2024 International Human Rights Council Maharashtra. All Rights Reserved.</p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇺🇸 US Headquarters</h4>
-                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">1126 Pitner Avenue, Evanston,<br>IL
-                        60202, United States<br><a href="tel:+12242550036"
-                            class="hover:text-[#FF851B] transition-colors">+1 224 255 0036</a><br><a
-                            href="mailto:info@ihrc.in" class="hover:text-[#FF851B] transition-colors">info@ihrc.in</a>
-                    </p>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">&#127482;&#127480; US Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">1126 Pitner Avenue, Evanston,<br>IL 60202, United States<br><a href="tel:+12242550036" class="hover:text-[#FF851B] transition-colors">+1 224 255 0036</a><br><a href="mailto:info@ihrc.in" class="hover:text-[#FF851B] transition-colors">info@ihrc.in</a></p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇨🇭 Switzerland
-                        Headquarters</h4>
-                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">31 Rue Vollandes, 1207
-                        Genèva,<br>Switzerland<br><a href="tel:+41779664839"
-                            class="hover:text-[#FF851B] transition-colors">+41 77 966 4839</a><br><a
-                            href="mailto:info@ihrc-geneve.org"
-                            class="hover:text-[#FF851B] transition-colors">info@ihrc-geneve.org</a></p>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">&#127464;&#127469; Switzerland Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">31 Rue Vollandes, 1207 Gen&egrave;va,<br>Switzerland<br><a href="tel:+41779664839" class="hover:text-[#FF851B] transition-colors">+41 77 966 4839</a><br><a href="mailto:info@ihrc-geneve.org" class="hover:text-[#FF851B] transition-colors">info@ihrc-geneve.org</a></p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">🇮🇳 India Headquarters</h4>
-                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">54 Raj Chambers, Alibhai Premji
-                        Marg,<br>Grant Road, Mumbai - 400007<br><a href="tel:+917208802565"
-                            class="hover:text-[#FF851B] transition-colors">+91 72088 02565</a><br><a
-                            href="mailto:ihrc777@gmail.com"
-                            class="hover:text-[#FF851B] transition-colors">ihrc777@gmail.com</a></p>
+                    <h4 class="font-bold text-white text-xs tracking-widest uppercase mb-3">&#127470;&#127475; India Headquarters</h4>
+                    <p class="font-['Inter'] text-sm leading-relaxed text-slate-300">54 Raj Chambers, Alibhai Premji Marg,<br>Grant Road, Mumbai - 400007<br><a href="tel:+917208802565" class="hover:text-[#FF851B] transition-colors">+91 72088 02565</a><br><a href="mailto:ihrc777@gmail.com" class="hover:text-[#FF851B] transition-colors">ihrc777@gmail.com</a></p>
                 </div>
             </div>
         </div>

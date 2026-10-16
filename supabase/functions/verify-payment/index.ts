@@ -1,7 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.14.0'
 
-// Helper: HMAC-SHA256 using built-in Web Crypto (no external imports needed)
 async function hmacSHA256Hex(secret: string, data: string): Promise<string> {
   const encoder = new TextEncoder()
   const key = await crypto.subtle.importKey(
@@ -17,7 +16,6 @@ async function hmacSHA256Hex(secret: string, data: string): Promise<string> {
 
 serve(async (req) => {
   try {
-    // Webhook from Razorpay
     const bodyText = await req.text()
     const rzpSignature = req.headers.get('x-razorpay-signature')
 
@@ -26,9 +24,8 @@ serve(async (req) => {
       throw new Error("Missing secret or signature")
     }
 
-    // Verify HMAC using built-in crypto
     const expectedSignature = await hmacSHA256Hex(secret, bodyText)
-    
+
     if (expectedSignature !== rzpSignature) {
       throw new Error("Invalid signature")
     }
@@ -36,22 +33,24 @@ serve(async (req) => {
     const payload = JSON.parse(bodyText)
     const payment = payload.payload.payment.entity
 
-    // In 'payment.captured' event, the order object might not be included.
-    // However, the notes are also attached to the payment object itself.
     const notes = payment.notes || {};
-    const { name, email, phone, gender, occupation } = notes;
+    const { name, email, phone, gender, occupation, workshop } = notes;
     const order_id = payment.order_id;
+
+    // Use workshop from notes, fallback to 'Workshop'
+    const workshopName = workshop || 'Workshop';
 
     // 1. Save to Supabase DB
     const supabaseUrl = Deno.env.get('SUPABASE_URL') || ''
     const supabaseKey = Deno.env.get('SERVICE_ROLE_KEY') || ''
 
     if (!supabaseUrl || !supabaseKey) {
-      throw new Error("Supabase credentials (SUPABASE_URL or SERVICE_ROLE_KEY) are not configured.")
+      throw new Error("Supabase credentials not configured.")
     }
+
     const supabase = createClient(supabaseUrl, supabaseKey)
 
-    const { data: dbData, error: dbError } = await supabase
+    const { error: dbError } = await supabase
       .from('registrations')
       .insert([
         {
@@ -60,21 +59,20 @@ serve(async (req) => {
           phone,
           gender,
           occupation,
-          workshop: 'AI & ChatGPT',
+          workshop: workshopName,
           razorpay_payment_id: payment.id,
           razorpay_order_id: order_id,
           amount: payment.amount,
           payment_status: payment.status,
         }
       ])
-      .select()
 
-    if (dbError) throw dbError
+    if (dbError) console.error("DB Error:", dbError.message)
+    else console.log("Saved to Supabase successfully.")
 
     // 2. Append to Google Sheets
     const googleAppScriptUrl = Deno.env.get('GOOGLE_APPS_SCRIPT_URL')
     if (googleAppScriptUrl) {
-      console.log("Preparing to send data to Google Sheets...")
       try {
         await fetch(googleAppScriptUrl, {
           method: "POST",
@@ -85,19 +83,20 @@ serve(async (req) => {
             phone,
             gender,
             occupation,
-            order_id: order_id,
+            workshop: workshopName,
+            order_id,
             payment_status: payment.status
           })
         })
+        console.log("Sent to Google Sheets.")
       } catch (err) {
-        console.error("Google Sheets Webhook Error:", err.message)
+        console.error("Google Sheets Error:", err.message)
       }
     }
 
-    // 3. Send Email via Resend
+    // 3. Send Confirmation Email via Resend
     const resendApiKey = Deno.env.get('RESEND_API_KEY')
-    if (resendApiKey) {
-      console.log(`Preparing to send email to ${email} via Resend...`)
+    if (resendApiKey && email) {
       try {
         await fetch("https://api.resend.com/emails", {
           method: "POST",
@@ -113,7 +112,7 @@ serve(async (req) => {
               <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eaeaec; border-radius: 8px;">
                 <h2 style="color: #001F3F;">Registration Confirmed!</h2>
                 <p>Dear <strong>${name}</strong>,</p>
-                <p>Thank you for registering for the <strong>AI &amp; ChatGPT Workshop</strong>.</p>
+                <p>Thank you for registering for the <strong>${workshopName} Workshop</strong>.</p>
                 <p>Your payment was successful and your seat is confirmed.</p>
                 <div style="background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin: 20px 0;">
                   <p style="margin: 5px 0;"><strong>Order ID:</strong> ${order_id}</p>
@@ -125,6 +124,7 @@ serve(async (req) => {
             `
           })
         })
+        console.log(`Confirmation email sent to ${email}`)
       } catch (err) {
         console.error("Resend Email Error:", err.message)
       }
